@@ -1,0 +1,9 @@
+00:01:21.219 [main] DEBUG api.test.UserTest - debugging------
+00:01:21.229 [main] INFO  api.test.UserTest - ---------- Creating user-----------
+00:01:22.372 [main] INFO  api.test.UserTest - ---------- User is created-----------
+00:01:22.374 [main] INFO  api.test.UserTest - ---------- reading user info-----------
+00:01:23.438 [main] INFO  api.test.UserTest - ---------- User info is displayed-----------
+00:01:23.440 [main] INFO  api.test.UserTest - ---------- updating user-----------
+00:01:24.546 [main] INFO  api.test.UserTest - ---------- user is upadated-----------
+00:01:25.628 [main] INFO  api.test.UserTest - ---------- deleting user-----------
+00:01:26.701 [main] INFO  api.test.UserTest - ---------- user is deleted-----------

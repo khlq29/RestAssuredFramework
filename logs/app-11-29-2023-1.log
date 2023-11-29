@@ -1,0 +1,24 @@
+23:55:17.584 [main] INFO  api.test.UserTest - ---------- Creating user-----------
+23:55:18.720 [main] INFO  api.test.UserTest - ---------- User is created-----------
+23:55:18.723 [main] INFO  api.test.UserTest - ---------- reading user info-----------
+23:55:19.813 [main] INFO  api.test.UserTest - ---------- User info is displayed-----------
+23:55:19.815 [main] INFO  api.test.UserTest - ---------- updating user-----------
+23:55:20.915 [main] INFO  api.test.UserTest - ---------- user is upadated-----------
+23:55:22.007 [main] INFO  api.test.UserTest - ---------- deleting user-----------
+23:55:23.119 [main] INFO  api.test.UserTest - ---------- user is deleted-----------
+23:57:07.617 [main] INFO  api.test.UserTest - ---------- Creating user-----------
+23:57:08.777 [main] INFO  api.test.UserTest - ---------- User is created-----------
+23:57:08.779 [main] INFO  api.test.UserTest - ---------- reading user info-----------
+23:57:09.887 [main] INFO  api.test.UserTest - ---------- User info is displayed-----------
+23:57:09.888 [main] INFO  api.test.UserTest - ---------- updating user-----------
+23:57:10.981 [main] INFO  api.test.UserTest - ---------- user is upadated-----------
+23:57:12.074 [main] INFO  api.test.UserTest - ---------- deleting user-----------
+23:57:13.213 [main] INFO  api.test.UserTest - ---------- user is deleted-----------
+23:59:11.918 [main] INFO  api.test.UserTest - ---------- Creating user-----------
+23:59:13.016 [main] INFO  api.test.UserTest - ---------- User is created-----------
+23:59:13.018 [main] INFO  api.test.UserTest - ---------- reading user info-----------
+23:59:14.111 [main] INFO  api.test.UserTest - ---------- User info is displayed-----------
+23:59:14.113 [main] INFO  api.test.UserTest - ---------- updating user-----------
+23:59:15.186 [main] INFO  api.test.UserTest - ---------- user is upadated-----------
+23:59:16.264 [main] INFO  api.test.UserTest - ---------- deleting user-----------
+23:59:17.332 [main] INFO  api.test.UserTest - ---------- user is deleted-----------
