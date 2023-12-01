@@ -11,6 +11,7 @@
     <classes>
       <class name="api.test.DataDrivenTest"/>
       <class name="api.test.UserTest"/>
+      <class name="api.test.UserTest2"/>
     </classes>
   </test> <!-- FirstTest -->
 

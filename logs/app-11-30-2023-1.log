@@ -1,0 +1,31 @@
+00:01:21.219 [main] DEBUG api.test.UserTest - debugging------
+00:01:21.229 [main] INFO  api.test.UserTest - ---------- Creating user-----------
+00:01:22.372 [main] INFO  api.test.UserTest - ---------- User is created-----------
+00:01:22.374 [main] INFO  api.test.UserTest - ---------- reading user info-----------
+00:01:23.438 [main] INFO  api.test.UserTest - ---------- User info is displayed-----------
+00:01:23.440 [main] INFO  api.test.UserTest - ---------- updating user-----------
+00:01:24.546 [main] INFO  api.test.UserTest - ---------- user is upadated-----------
+00:01:25.628 [main] INFO  api.test.UserTest - ---------- deleting user-----------
+00:01:26.701 [main] INFO  api.test.UserTest - ---------- user is deleted-----------
+01:13:21.653 [main] DEBUG api.test.UserTest - debugging------
+01:13:21.669 [main] INFO  api.test.UserTest - Request: api.payload.User@43f03c23
+01:13:21.669 [main] INFO  api.test.UserTest - ---------- Creating user-----------
+01:13:24.363 [main] INFO  api.test.UserTest - ---------- User is created-----------
+01:13:24.363 [main] INFO  api.test.UserTest - Request: io.restassured.internal.RestAssuredResponseImpl@62f37bfd
+01:13:24.370 [main] INFO  api.test.UserTest - ---------- reading user info-----------
+01:13:25.472 [main] INFO  api.test.UserTest - ---------- User info is displayed-----------
+01:13:25.473 [main] INFO  api.test.UserTest - ---------- updating user-----------
+01:13:26.610 [main] INFO  api.test.UserTest - ---------- user is upadated-----------
+01:13:27.731 [main] INFO  api.test.UserTest - ---------- deleting user-----------
+01:13:28.839 [main] INFO  api.test.UserTest - ---------- user is deleted-----------
+01:14:17.700 [main] DEBUG api.test.UserTest - debugging------
+01:14:17.703 [main] INFO  api.test.UserTest - Request: api.payload.User@70f8d217
+01:14:17.703 [main] INFO  api.test.UserTest - ---------- Creating user-----------
+01:14:18.837 [main] INFO  api.test.UserTest - ---------- User is created-----------
+01:14:18.837 [main] INFO  api.test.UserTest - Request: io.restassured.internal.RestAssuredResponseImpl@54eb2bf6
+01:14:18.839 [main] INFO  api.test.UserTest - ---------- reading user info-----------
+01:14:19.884 [main] INFO  api.test.UserTest - ---------- User info is displayed-----------
+01:14:19.886 [main] INFO  api.test.UserTest - ---------- updating user-----------
+01:14:20.928 [main] INFO  api.test.UserTest - ---------- user is upadated-----------
+01:14:22.035 [main] INFO  api.test.UserTest - ---------- deleting user-----------
+01:14:23.147 [main] INFO  api.test.UserTest - ---------- user is deleted-----------
