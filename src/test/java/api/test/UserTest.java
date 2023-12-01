@@ -44,13 +44,14 @@ public class UserTest {
 	
 	@Test(priority =1)
 	public void testPostUser() {
-		
+	
 		logger.info("---------- Creating user-----------");
 		Response response = UserEndPoints.createUser(userPayload);
 		response.then().log().all();
 		
 		Assert.assertEquals(response.getStatusCode(),200);
 		logger.info("---------- User is created-----------");
+		
 	}
 	
 	@Test(priority =2)

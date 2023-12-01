@@ -1,11 +1,41 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<properties>
+		<configuration-suite>firsttest.xml</configuration-suite>
+		<configuration-suiteXmlFile>testng.xml</configuration-suiteXmlFile>
+		<maven-surefire-plugin-groupId>org.apache.maven.plugins</maven-surefire-plugin-groupId>
+	</properties>
+
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>Numadic1</groupId>
 	<artifactId>Numadic1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<!-- Plugins to run project through pom.xml -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.2.2</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>firsttest.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.11.0</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 
 	<dependencies>
 		<!-- Selenium WebDriver -->
