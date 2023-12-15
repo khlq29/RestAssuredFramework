@@ -14,6 +14,7 @@
 		<maven-surefire-plugin-groupId>org.apache.maven.plugins</maven-surefire-plugin-groupId>
 	</properties>
 
+
 	<dependencies>
 		<!-- Selenium WebDriver -->
 		<dependency>
@@ -22,6 +23,12 @@
 			<version>3.141.59</version>
 		</dependency>
 
+		<!--https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-driver</artifactId>
+			<version>3.141.59</version>
+		</dependency>
 		<!-- WebDriverManager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
@@ -156,6 +163,7 @@
 			<version>1.0.2</version>
 		</dependency>
 
+
 		<!-- Extent Reports -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
@@ -199,4 +207,8 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
 </project>
+
+
+
