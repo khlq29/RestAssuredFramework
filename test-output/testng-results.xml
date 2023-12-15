@@ -1,37 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-01T23:29:59 IST" name="Default suite" finished-at="2023-12-01T23:30:08 IST" duration-ms="8995">
+  <suite started-at="2023-12-14T22:41:20 IST" name="Default suite" finished-at="2023-12-14T22:41:22 IST" duration-ms="2390">
     <groups>
     </groups>
-    <test started-at="2023-12-01T23:29:59 IST" name="Default test" finished-at="2023-12-01T23:30:08 IST" duration-ms="8995">
-      <class name="api.test.UserTest2">
-        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.UserTest2@223d2c72]" started-at="2023-12-01T23:29:59 IST" name="setup" finished-at="2023-12-01T23:30:00 IST" duration-ms="692" status="PASS">
+    <test started-at="2023-12-14T22:41:20 IST" name="Default test" finished-at="2023-12-14T22:41:22 IST" duration-ms="2390">
+      <class name="api.test.UserTest3">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.UserTest3@1623b78d]" started-at="2023-12-14T22:41:20 IST" name="setup" finished-at="2023-12-14T22:41:20 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testPostUser()[pri:1, instance:api.test.UserTest2@223d2c72]" started-at="2023-12-01T23:30:00 IST" name="testPostUser" finished-at="2023-12-01T23:30:03 IST" duration-ms="2634" status="PASS">
+        <test-method signature="testGetUserByNameJsonCompareValidation()[pri:1, instance:api.test.UserTest3@1623b78d]" started-at="2023-12-14T22:41:20 IST" name="testGetUserByNameJsonCompareValidation" finished-at="2023-12-14T22:41:22 IST" duration-ms="2354" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Response body doesn't match expectation.
+Expected: "{\"id\": 1234, \"username\": \"John_Cena123\", \"firstName\": \"John\", \"lastName\": \"Cena\", \"email\": \"john_cena098@gmail.com\", \"password\": \"john1234cena\", \"phone\": \"+91 1234567890\", \"userStatus\": 0}"
+  Actual: {"id":1234,"username":"John_Cena123","firstName":"John","lastName":"Cena","email":"john_cena098@gmail.com","password":"john1234cena","phone":"+91 1234567890","userStatus":0}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: "{\"id\": 1234, \"username\": \"John_Cena123\", \"firstName\": \"John\", \"lastName\": \"Cena\", \"email\": \"john_cena098@gmail.com\", \"password\": \"john1234cena\", \"phone\": \"+91 1234567890\", \"userStatus\": 0}"
+  Actual: {"id":1234,"username":"John_Cena123","firstName":"John","lastName":"Cena","email":"john_cena098@gmail.com","password":"john1234cena","phone":"+91 1234567890","userStatus":0}
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+at api.test.UserTest3.testGetUserByNameJsonCompareValidation(UserTest3.java:103)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPostUser -->
-        <test-method signature="testGetUserByName()[pri:2, instance:api.test.UserTest2@223d2c72]" started-at="2023-12-01T23:30:03 IST" name="testGetUserByName" finished-at="2023-12-01T23:30:04 IST" duration-ms="1161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetUserByName -->
-        <test-method signature="testUpdateUserByName()[pri:3, instance:api.test.UserTest2@223d2c72]" started-at="2023-12-01T23:30:04 IST" name="testUpdateUserByName" finished-at="2023-12-01T23:30:06 IST" duration-ms="2283" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdateUserByName -->
-        <test-method signature="testDeleteUserByName()[pri:4, instance:api.test.UserTest2@223d2c72]" started-at="2023-12-01T23:30:06 IST" name="testDeleteUserByName" finished-at="2023-12-01T23:30:07 IST" duration-ms="1073" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeleteUserByName -->
-        <test-method signature="testGetUserByNameAfterDeletion()[pri:5, instance:api.test.UserTest2@223d2c72]" started-at="2023-12-01T23:30:07 IST" name="testGetUserByNameAfterDeletion" finished-at="2023-12-01T23:30:08 IST" duration-ms="1120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetUserByNameAfterDeletion -->
-      </class> <!-- api.test.UserTest2 -->
+        </test-method> <!-- testGetUserByNameJsonCompareValidation -->
+      </class> <!-- api.test.UserTest3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

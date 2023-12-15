@@ -3,16 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.UserTest2">
+      <class name="api.test.UserTest3">
         <methods>
-          <include name="testGetUserByName"/>
-          <include name="testDeleteUserByName"/>
-          <include name="testGetUserByNameAfterDeletion"/>
-          <include name="testUpdateUserByName"/>
-          <include name="testPostUser"/>
           <include name="setup"/>
+          <include name="testGetUserByNameJsonCompareValidation"/>
         </methods>
-      </class> <!-- api.test.UserTest2 -->
+      </class> <!-- api.test.UserTest3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

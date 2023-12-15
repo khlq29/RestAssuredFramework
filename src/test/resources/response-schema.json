@@ -1,0 +1,97 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1702551719.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"id",
+		"username",
+		"firstName",
+		"lastName",
+		"email",
+		"password",
+		"phone",
+		"userStatus"
+	],
+	"properties": {
+		"id": {
+			"$id": "#root/id", 
+			"title": "Id", 
+			"type": "integer",
+			"examples": [
+				1234
+			],
+			"default": 0
+		},
+		"username": {
+			"$id": "#root/username", 
+			"title": "Username", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"John_Cena123"
+			],
+			"pattern": "^.*$"
+		},
+		"firstName": {
+			"$id": "#root/firstName", 
+			"title": "Firstname", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"John"
+			],
+			"pattern": "^.*$"
+		},
+		"lastName": {
+			"$id": "#root/lastName", 
+			"title": "Lastname", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"Cena"
+			],
+			"pattern": "^.*$"
+		},
+		"email": {
+			"$id": "#root/email", 
+			"title": "Email", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"john_cena098@gmail.com"
+			],
+			"pattern": "^.*$"
+		},
+		"password": {
+			"$id": "#root/password", 
+			"title": "Password", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"john1234cena"
+			],
+			"pattern": "^.*$"
+		},
+		"phone": {
+			"$id": "#root/phone", 
+			"title": "Phone", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"+91 1234567890"
+			],
+			"pattern": "^.*$"
+		},
+		"userStatus": {
+			"$id": "#root/userStatus", 
+			"title": "Userstatus", 
+			"type": "integer",
+			"examples": [
+				0
+			],
+			"default": 0
+		}
+	}
+}
