@@ -47,7 +47,7 @@ public class UserTest {
 	
 		logger.info("---------- Creating user-----------");
 		Response response = UserEndPoints.createUser(userPayload);
-		response.then().log().all();
+		response.then().statusCode(200).log().all();
 		
 		Assert.assertEquals(response.getStatusCode(),200);
 		logger.info("---------- User is created-----------");

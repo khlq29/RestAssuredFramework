@@ -41,6 +41,7 @@ public class DataDrivenTest {
 	public void testDeleteUserByName(String userName) {
 
 		Response response = UserEndPoints.deleteUser(userName);
+		
 		Assert.assertEquals(response.getStatusCode(),200);
 		
 	}

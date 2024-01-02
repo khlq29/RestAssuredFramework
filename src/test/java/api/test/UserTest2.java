@@ -1,5 +1,7 @@
 package api.test;
 
+import java.io.InputStream;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -8,6 +10,7 @@ import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 import api.endpoints.UserEndPoints2;
 import api.payload.User;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
 public class UserTest2{
@@ -56,13 +59,14 @@ public class UserTest2{
 	@Test(priority =2)
 	public void testGetUserByName() {
 		
-		logger.info("---------- reading user info-----------");
+		InputStream schemaval = getClass ().getClassLoader ()
+			    .getResourceAsStream ("Schema.json");
 		Response response = UserEndPoints2.readUser(this.userPayload.getUsername());
-		response.then().log().all();
+		response.then().body(JsonSchemaValidator.matchesJsonSchema (schemaval)).and().statusCode(300).log().all();
 		//response.getstatusCode(200);
 		
 		Assert.assertEquals(response.getStatusCode(),200);
-		logger.info("---------- User info is displayed-----------");
+		
 	}
 	
 	@Test(priority =3)
